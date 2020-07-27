@@ -1,8 +1,8 @@
 {
   "appName": "Screen Markers",
   "description": "Draws click through overlays on screen for all your screen marking needs!",
-  "appUrl": "/apps/ScreenMarkers/",
-  "iconUrl": "/apps/ScreenMarkers/icon.png",
+  "appUrl": "/",
+  "iconUrl": "icon.png",
   "defaultWidth":270,
   "defaultHeight": 400,
   "minWidth": 270,
