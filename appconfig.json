@@ -1,22 +1,13 @@
 {
-    "appName":"Example app",
-    "description":"This app is an example for other developers, this text will show up in the app list.",
-    "appUrl":"/",
-    "configUrl":"/appconfig.jon",
-    "defaultWidth":100,
-    "defaultHeight":100,
-    "minWidth":10,
-    "minHeight":10,
-    "maxWidth":1000,
-    "maxHeight":1000,
-    
-    
-    
-    "requestHandlers":[],
-    
-    
-    "activators": ["Drop Blue partyhat", "Drop Purple partyhat","regex:^Activate (?<abil>[\\w ]+)$"],
-
-    
-    "permissions":"pixel,gamestate,overlay"
+  "appName": "Screen Markers",
+  "description": "Draws click through overlays on screen for all your screen marking needs!",
+  "appUrl": "/apps/ScreenMarkers/",
+  "iconUrl": "/apps/ScreenMarkers/icon.png",
+  "defaultWidth":270,
+  "defaultHeight": 400,
+  "minWidth": 270,
+  "minHeight": 200,
+  "maxWidth": 1000,
+  "maxHeight": 1000,
+  "permissions": "overlay,gamestate"
 }
