@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="alt1lib.js"></script>
 	<!--alt1 wrapper library (Will be part of public resources so feel free to copy/paste)-->
 	<script type="text/javascript" src="imagedetect.js"></script>
+	<script type="text/javascript" src="markers.js"></script>
 	<!--Basic alt1 image processing library-->
 	<script type="text/javascript">
 		capturecenter = {
@@ -160,7 +161,7 @@
 				// setInterval(() =>{
 				// 	document.getElementsByClassName("nis")[0].classList.toggle("hide");
 				// }, 3000);
-				alt1.overlayRect(colorMix(200, 200, 200, 255), 500, 500, 100, 100, 10);
+				drawRect(colorMix(200, 200, 200, 255), 500, 500, 100, 100, 10);
 			} else {
 				message("Page loaded, alt1 not recognised.");
 			}
