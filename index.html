@@ -18,8 +18,8 @@
 			configUrl:"/appconfig.jon",//link to a json file which contains this object, this link uniquely identifies your app
 			defaultWidth:300,//preferred sizes, can be overwritten by alt1
 			defaultHeight:300,
-			minWidth:200,
-			minHeight:200,
+			minWidth:50,
+			minHeight:50,
 			maxWidth:1000,
 			maxHeight:1000,
 			
@@ -45,9 +45,6 @@
 		
 		//this function will be called when the user presses alt1 over anything
 		function alt1onrightclick(obj){
-			message("Alt+1 ("+obj.x+":"+obj.y+") - \""+obj.text+"\"");
-			capturecenter={x:obj.x,y:obj.y};
-			docapture();
 		}
 		
 		//captures the area around the last alt+1 press and displays it on a canvas
@@ -147,7 +144,6 @@
 	</script>
 	<style type="text/css">
 		#eventlog{position:absolute; top:210px; right:5px; bottom:5px; left:5px; white-space:pre; background:rgba(0,0,0,0.5); outline:1px solid gray; padding:5px; font-family:monospace; overflow-x:hidden; overflow-y:auto;}
-		#capturecnv{position:absolute; top:5px; left:5px; height:200px; width:calc(100% - 130px); background:url('transblocks.png'); outline:1px solid gray;}
 		#xpdroptoggle{position:absolute; top:0px; right:0px; width:90px;}
 		#docapturebutton{position:absolute; top:0px; right:0px; width:90px;}
 		#tooltipbutton{position:absolute; top:40px; right:0px; width:90px;}
@@ -155,7 +151,7 @@
 		#coloroutput{position:absolute; top:165px; height:40px; width:115px; right:5px; outline:1px solid gray; color:white; text-shadow:1px 1px 0px black;}
 	</style>
 </head>
-<body class="nis" onload="start();">
+<body onload="start();">
 	<!-- <canvas id="capturecnv"></canvas> -->
 	<!-- <div id="docapturebutton" class="nisbutton" onclick="docapture();">Capture</div>
 	<div id="tooltipbutton" class="nisbutton" onclick="toggletooltip();">Tooltip</div> -->
