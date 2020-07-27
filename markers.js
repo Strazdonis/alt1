@@ -211,6 +211,9 @@ function setOverlayG(name)
     alt1.overLaySetGroup(name);
 }
 
+
+
+
 /**
  * Open the editor window for a marker
  * @param {String} name - name of the overlay.

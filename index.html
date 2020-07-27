@@ -63,7 +63,7 @@
                     title="Blue">
             </div>
             <div>
-                <label class="labelT" style="margin-left: 80px">Thickness:</label>
+                <label class="labelT" style="margin-left: 80px">Thickness:<span class="thickValue"></span></label>
                 <input id="lineWidth" min="1" max="50" type="range" style="margin-left: 50px" title="Thickness">
             </div>
             <div>
@@ -105,7 +105,7 @@
                     title="Blue">
             </div>
             <div>
-                <label class="labelT" style="margin-left: 80px">Thickness:</label>
+                <label class="labelT" style="margin-left: 80px">Thickness:<span class="thickValue"></span></label>
                 <input id="lineWidth2" min="1" max="50" type="range" style="margin-left: 50px" title="Line Width">
             </div>
             <div>
@@ -150,7 +150,7 @@
                     title="Blue">
             </div>
             <div>
-                <label class="labelT" style="margin-left: 80px">Thickness:</label>
+                <label class="labelT" style="margin-left: 80px">Thickness:<span class="thickValue"></span></label>
                 <input id="lineWidthE" min="1" max="50" type="range" style="margin-left: 50px" title="Line Width">
             </div>
             <div>
@@ -195,7 +195,7 @@
                     title="Blue">
             </div>
             <div>
-                <label class="labelT" style="margin-left: 80px">Thickness:</label>
+                <label class="labelT" style="margin-left: 80px">Thickness:<span class="thickValue"></span></label>
                 <input id="lineWidthE2" min="1" max="50" type="range" style="margin-left: 50px" title="Line Width">
             </div>
             <div>
@@ -221,5 +221,22 @@
     </div>
 
 </body>
+
+<script>
+    const inputs = [document.getElementById("lineWidth"), document.getElementById("lineWidth2"), document
+        .getElementById("lineWidthE"), document.getElementById("lineWidthE2"),
+    ];
+
+    const labels = [... document.getElementsByClassName("thickValue")];
+
+    inputs.forEach(input => {
+        input.addEventListener("input", e => {
+            labels.forEach(label => {
+                label.innerText = input.value;
+            });
+        });
+    })
+
+</script>
 
 </html>
