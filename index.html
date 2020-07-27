@@ -127,9 +127,9 @@
 		
 		function start(){
 			if(window.alt1){
-				message("Page loaded, alt1 recognised.");
-				message("Alt1 version: "+alt1.version);
-				message("Press alt-1 to capture.");
+				// message("Page loaded, alt1 recognised.");
+				// message("Alt1 version: "+alt1.version);
+				// message("Press alt-1 to capture.");
 				
 				if(alt1.permissionInstalled) {
 					console.log(JSON.parse(alt1.openInfo));
@@ -156,12 +156,12 @@
 	</style>
 </head>
 <body class="nis" onload="start();">
-	<canvas id="capturecnv"></canvas>
-	<div id="docapturebutton" class="nisbutton" onclick="docapture();">Capture</div>
-	<div id="tooltipbutton" class="nisbutton" onclick="toggletooltip();">Tooltip</div>
-	<div id="coloroutput">Press alt+1 to grab a color</div>
-	<div id="eventlog" class="nistext">
-	<div id="test">hi</div>
+	<!-- <canvas id="capturecnv"></canvas> -->
+	<!-- <div id="docapturebutton" class="nisbutton" onclick="docapture();">Capture</div>
+	<div id="tooltipbutton" class="nisbutton" onclick="toggletooltip();">Tooltip</div> -->
+	<!-- <div id="coloroutput">Press alt+1 to grab a color</div>
+	<div id="eventlog" class="nistext"> -->
+	<!-- <div id="test">hi</div> -->
 </div>
 
 
