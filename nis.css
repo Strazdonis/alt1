@@ -123,7 +123,9 @@ body.scrollreset *{overflow:hidden !important;}
 
 
 
-
+.hide {
+	opacity: 0 !important;
+}
 
 
 

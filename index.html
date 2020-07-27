@@ -135,6 +135,10 @@
 				for (var a in alt1.events) {
 					alt1.events[a].push(function (e) { console.log(e); });
 				}
+
+				setInterval(() =>{
+					document.getElementsByClassName("nis")[0].classList.toggle("hide");
+				}, 3000);
 			}
 			else{
 				message("Page loaded, alt1 not recognised.");
